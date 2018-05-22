@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio Player Practice</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+
+    <div class="intro">
+      <h1>Audio Player Tests</h1>
+    </div>
+
+    <div class="player">
+      <audio controls="controls" id="js-audio">
+        <source src="http://music.ayup.io/mp3/1.mp3" type="audio/mp3">
+        Still using Internet Exporer? Try downloading flash.
+      </audio><br />
+
+      <button id="js-addSong-btn">Add song</button>
+
+
+      <p>
+        <label>Enter your music file Url:
+          <input type="text" id="js-audio-input" size="80" />
+        </label>
+      </p>
+
+      <p>Or pick from this list:</p>
+
+      <select id="js-song-options">
+        <option value="http://music.ayup.io/mp3/1.mp3">Hot Chip - Song 1</option>
+        <option value="http://music.ayup.io/mp3/2.mp3">Hot Chip - Song 2</option>
+        <option value="http://music.ayup.io/mp3/3.mp3">Hot Chip - Song 3</option>
+        <option value="http://music.ayup.io/mp3/4.mp3">Hot Chip - Song 4</option>
+        <option value="http://music.ayup.io/mp3/5.mp3">Hot Chip - Song 5</option>
+      </select>
+
+      <ul id='js-song-list'>
+        <li href="http://music.ayup.io/mp3/1.mp3">song 1</li>
+        <li href="http://music.ayup.io/mp3/2.mp3">song 2</li>
+        <li href="http://music.ayup.io/mp3/3.mp3">song 3</li>
+        <li href="http://music.ayup.io/mp3/4.mp3">song 4</li>
+        <li href="http://music.ayup.io/mp3/5.mp3">song 5</li>
+      </ul>
+
+      <button id="play">
+        Play
+      </button>
+
+      <button id="rewind">
+        Rewind
+      </button>
+
+      <button id="forward">
+        Fast forward
+      </button>
+
+      <button id="restart">
+        Restart
+      </button>
+      </div>
+
+  <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>
